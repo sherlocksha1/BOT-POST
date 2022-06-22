@@ -424,14 +424,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n📫 Your File Is Ready\n\n'           
-                f'📽️ Movie File Name :/n'              
-                '   <code>📂{title}</code>',
+                f'📽️ Movie File Name :\n'              
+                f'   <code>📂{title}</code>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('🔄 DOWNLOAD 🔄 ', url = msg.link)
+                            InlineKeyboardButton('♻️ DOWNLOAD ♻️ ', url = msg.link)
                         ],                       
                         [
                             InlineKeyboardButton('🔞 Close', callback_data='close')
