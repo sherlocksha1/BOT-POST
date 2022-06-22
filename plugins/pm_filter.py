@@ -428,7 +428,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 '<code>📂{title}</code>',
                 True,
                 'html',
-                reply_markup=InlineKeyboardMark(
+                reply_markup=InlineKeyboardMarkup(
                         ],
                         [
                             InlineKeyboardButton('🔄 DOWNLOAD 🔄 ', url = msg.link)
